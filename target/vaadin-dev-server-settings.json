@@ -1,0 +1,18 @@
+{
+  "frontendFolder": "C:/LocalTests/d2-holygrail/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/LocalTests/d2-holygrail/./frontend/generated/jar-resources",
+  "staticOutput": "C:/LocalTests/d2-holygrail/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\LocalTests\\d2-holygrail\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\LocalTests\\d2-holygrail\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/LocalTests/d2-holygrail/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/LocalTests/d2-holygrail/src/main/dev-bundle/config",
+  "jarResourcesFolder": "C:/LocalTests/d2-holygrail/./frontend/generated/jar-resources",
+  "generatedFlowImportsFolder": "target/frontend",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\LocalTests\\d2-holygrail\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
