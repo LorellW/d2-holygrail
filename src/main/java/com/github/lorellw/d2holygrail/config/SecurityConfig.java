@@ -17,7 +17,7 @@ public class SecurityConfig extends VaadinWebSecurity {
     private UserService userService;
     @Autowired
     private PasswordEncoder encoder;
-    
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.rememberMe().alwaysRemember(true);
