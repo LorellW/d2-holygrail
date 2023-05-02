@@ -47,9 +47,11 @@ public class MainLayout extends AppLayout {
 
     private void createDrawer(){
         RouterLink aboutLink = new RouterLink("About", AboutView.class);
+        RouterLink hgLink = new RouterLink("Holy grail", HolyGrailView.class);
 
         addToDrawer(
                 new VerticalLayout(
+                        hgLink,
                         aboutLink
                 )
         );
