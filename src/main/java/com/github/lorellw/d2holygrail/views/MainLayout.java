@@ -9,15 +9,14 @@ import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.RouterLink;
-import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class MainLayout extends AppLayout {
 
-    @Autowired
-    private SecurityService securityService;
+    private final SecurityService securityService;
 
-    public MainLayout(){
+    public MainLayout(SecurityService securityService){
+        this.securityService = securityService;
         createHeader();
         createDrawer();
     }
@@ -26,9 +25,12 @@ public class MainLayout extends AppLayout {
         H3 logo = new H3("D2R Holy Grail");
         logo.addClassNames("text-l", "m-m");
 
+        Button logoutButton = new Button("Log out", buttonClickEvent -> {
+            try {
+                securityService.logout();
+            }catch (IllegalStateException ignored){
 
-        Button logoutButton = new Button("Log out",buttonClickEvent -> {
-            securityService.logout();
+            }
         });
 
         HorizontalLayout header = new HorizontalLayout(
@@ -55,5 +57,9 @@ public class MainLayout extends AppLayout {
                         aboutLink
                 )
         );
+    }
+
+    private void configLogOutButton(){
+
     }
 }
